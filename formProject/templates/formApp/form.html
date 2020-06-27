@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Layman's Agro-Register</title>
+    <link rel="stylesheet" href={%static "css/form.css" %}>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1 id="myh1">Farmer Registration Form</h1>
+    <div class="first">
+    <div class='container'>
+      <div class="col-lg-6">
+        <div class="panel panel-info">
+          <div class="panel-heading">Register</div>
+          <div class="panel-body">
+            <form method="post">
+              {% csrf_token %}
+              {{forms.as_p}}
+              <input type="submit" name=""class="btn btn-success" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" href={% static "css/signup.css" %}>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="total">
+      <br><br><br><br><br>
+    <div class='container'>
+      <div class="col-lg-6">
+        <div class="panel panel-info">
+          <div class="panel-heading">SignUp</div>
+          <div class="panel-body">
+            <form method="post">
+              {% csrf_token %}
+              {{form.as_p}}
+              <input type="submit" name=""class="btn btn-success" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

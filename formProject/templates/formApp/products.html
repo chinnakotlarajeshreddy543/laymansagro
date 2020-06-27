@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Products Details</title>
+    <link rel="stylesheet" href={%static "css/products.css"%}>
+  </head>
+  <body>
+    <h1 align=center>Products Details</h1>
+    <table border=2 align=center>
+      <thead>
+        <th>Product name</th>
+        <th>Product number</th>
+        <th>Product details</th>
+        <th>Product address</th>
+      </thead>
+      {% for p in product_details %}
+      <tr>
+        <td>{{p.pname}}</td>
+        <td>{{p.pno}}</td>
+        <td>{{p.pdetails}}</td>
+        <td>{{p.paddr}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

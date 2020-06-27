@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href={%static "css/login.css"%}>
+  </head>
+  <body>
+    <h1 align=center>Login Form</h1>
+    <hr id=hr>
+    <div class="total">
+
+    <div class="container">
+      <div class="col-sm-4">
+        <div class="panel panel-info">
+          <div class="panel-heading">Register</div>
+          <div class="panel-body">
+            <form method="post">
+              {{form.as_p}}
+              {% csrf_token %}
+              <input type="submit" class="btn btn-primary" name="" value="Login" align=center>
+           </form>
+          </div>
+         </div>
+       </div>
+     </div>
+    </div>
+  </body>
+</html>

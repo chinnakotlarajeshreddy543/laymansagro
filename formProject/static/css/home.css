@@ -1,0 +1,25 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#jumbo{
+  margin: 10%;
+  border: 10px groove black;
+  border-radius: 20px;
+}
+.display-4{
+  padding-left: 10%;
+}
+#but{
+  margin-left: 10%;
+}
+.rit{
+  float: right;
+  font-size: 20px;
+  color: orange;
+}
+#lay{
+  font-style: oblique;
+  color: white;
+}
